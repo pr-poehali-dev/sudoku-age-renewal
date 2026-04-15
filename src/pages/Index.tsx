@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
 /* ── Images (generated) ── */
-const IMG_CAPSULES = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/bucket/63c756e0-aef2-45d2-8727-69d8f9f4df22.jpeg";
+const IMG_CAPSULES        = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/bucket/63c756e0-aef2-45d2-8727-69d8f9f4df22.jpeg";
+const IMG_YUAN_CAPSULES   = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/bucket/e4b47b48-6b99-4f50-b053-f48463a731b1.png";
 const IMG_LAB      = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/files/8d83a329-fe49-4b2f-bbda-0465938aea5f.jpg";
 const IMG_MOLECULE = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/files/74ad48a4-8718-46fb-bca2-d371418cd36c.jpg";
 
@@ -484,6 +485,7 @@ function Science() {
 const PRODUCTS = [
   {
     id: "yuan", tab: "01. Капсулы Юань Нуо",
+    img: IMG_YUAN_CAPSULES,
     num: "01", cert: "Одобрено 2013",
     name: "Капсулы", nameEm: "Юань Нуо Exclusive",
     tagline: "Флагманский продукт корпорации. Первый в мире тройной антиоксидантный ферментный комплекс в одной капсуле. Формула, проверенная 18 годами.",
@@ -585,7 +587,7 @@ function Products() {
         <div className="grid md:grid-cols-2 gap-12 items-start" key={p.id}>
           {/* Image */}
           <div className="relative rounded-2xl overflow-hidden aspect-square" style={{ boxShadow: "var(--s-shadow-lg)" }}>
-            <img src={IMG_CAPSULES} alt={p.tab} className="w-full h-full object-cover" />
+            <img src={"img" in p ? (p as { img: string }).img : IMG_CAPSULES} alt={p.tab} className="w-full h-full object-cover" />
             <div
               className="absolute top-4 right-4 px-3 py-2 rounded-xl text-xs font-bold uppercase tracking-wide"
               style={{ background: "var(--color-gold)", color: "white" }}
