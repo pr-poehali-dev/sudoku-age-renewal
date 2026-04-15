@@ -686,7 +686,7 @@ function Why() {
       <div className="max-w-[1200px] mx-auto px-6">
         <Reveal className="mb-12">
           <div className="text-xs font-semibold tracking-[0.12em] uppercase mb-3" style={{ color: "var(--color-gold)", fontSize: "1.625rem" }}>Почему SUDOKU</div>
-          <h2 className="leading-[1.1]" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(5.75rem,4.15rem+5vw,8.75rem)", fontWeight: 400, color: "var(--color-text)" }}>
+          <h2 className="leading-[1.1]" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(11.5rem,8.3rem+10vw,17.5rem)", fontWeight: 400, color: "var(--color-text)" }}>
             То, чего нет<br />у <em style={{ fontStyle: "italic", color: "var(--color-primary)" }}>других брендов</em>
           </h2>
         </Reveal>
