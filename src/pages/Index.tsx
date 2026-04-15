@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 const IMG_CAPSULES        = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/bucket/63c756e0-aef2-45d2-8727-69d8f9f4df22.jpeg";
 const IMG_YUAN_CAPSULES   = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/bucket/f7409731-dd91-4618-920f-249048a72097.jpeg";
 const IMG_CORN_POWDER     = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/bucket/fd5fdfb1-d37b-4881-8ce6-bcbb53f22117.png";
+const IMG_COLLAGEN        = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/bucket/596fffad-7082-4c82-be4f-596fae9117bc.png";
 const IMG_LAB      = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/files/8d83a329-fe49-4b2f-bbda-0465938aea5f.jpg";
 const IMG_MOLECULE = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/files/74ad48a4-8718-46fb-bca2-d371418cd36c.jpg";
 
@@ -530,6 +531,7 @@ const PRODUCTS = [
   },
   {
     id: "collagen", tab: "03. Коллаген-пептид",
+    img: IMG_COLLAGEN,
     num: "03", cert: "KOLMAR Korea",
     name: "Коллаген-пептид", nameEm: "SUDOKU",
     tagline: "Разработан в партнёрстве с KOLMAR Korea — поставщиком рецептур для Chanel, Dior и SK-II. Молекула 2 000 Da — максимальное поглощение.",
