@@ -587,7 +587,7 @@ function Products() {
         <div className="grid md:grid-cols-2 gap-12 items-start" key={p.id}>
           {/* Image */}
           <div className="relative rounded-2xl overflow-hidden aspect-square" style={{ boxShadow: "var(--s-shadow-lg)" }}>
-            <img src={"img" in p ? (p as { img: string }).img : IMG_CAPSULES} alt={p.tab} className="w-full h-full object-cover" />
+            <img src={"img" in p ? (p as { img: string }).img : IMG_CAPSULES} alt={p.tab} className="w-full h-full object-contain" style={{ padding: "16px" }} />
             <div
               className="absolute top-4 right-4 px-3 py-2 rounded-xl text-xs font-bold uppercase tracking-wide"
               style={{ background: "var(--color-gold)", color: "white" }}
