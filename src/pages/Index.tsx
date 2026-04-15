@@ -421,7 +421,7 @@ function Science() {
         {/* Lab image */}
         <Reveal className="mb-12">
           <div className="rounded-2xl overflow-hidden aspect-[16/7]" style={{ boxShadow: "var(--s-shadow-lg)" }}>
-            <img src={IMG_MOLECULE} alt="Каскадное действие ферментов SUDOKU" className="w-full h-full object-cover" />
+            <img src="https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/bucket/11afca57-7ca3-41d3-876a-96cea9cffd63.png" alt="Каскадное действие ферментов SOD, CAT, GSH" className="w-full h-full object-cover" />
           </div>
         </Reveal>
 
