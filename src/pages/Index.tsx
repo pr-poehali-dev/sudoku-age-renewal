@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback } from "react";
 
 /* ── Images (generated) ── */
-const IMG_CAPSULES = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/files/83cdf0a5-9029-4486-b52f-26a58c214853.jpg";
+const IMG_CAPSULES = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/bucket/63c756e0-aef2-45d2-8727-69d8f9f4df22.jpeg";
 const IMG_LAB      = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/files/8d83a329-fe49-4b2f-bbda-0465938aea5f.jpg";
 const IMG_MOLECULE = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/files/74ad48a4-8718-46fb-bca2-d371418cd36c.jpg";
 
