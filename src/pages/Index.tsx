@@ -2,7 +2,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 
 /* ── Images (generated) ── */
 const IMG_CAPSULES        = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/bucket/63c756e0-aef2-45d2-8727-69d8f9f4df22.jpeg";
-const IMG_YUAN_CAPSULES   = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/bucket/e4b47b48-6b99-4f50-b053-f48463a731b1.png";
+const IMG_YUAN_CAPSULES   = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/bucket/f7409731-dd91-4618-920f-249048a72097.jpeg";
 const IMG_LAB      = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/files/8d83a329-fe49-4b2f-bbda-0465938aea5f.jpg";
 const IMG_MOLECULE = "https://cdn.poehali.dev/projects/b10fa5b4-0aae-410b-8ccd-4c315f93f3e9/files/74ad48a4-8718-46fb-bca2-d371418cd36c.jpg";
 
