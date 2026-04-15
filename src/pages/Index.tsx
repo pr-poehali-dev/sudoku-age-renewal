@@ -412,7 +412,7 @@ function Science() {
             <h2 className="mb-5 leading-[1.05]" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(3.6rem,1rem+6vw,7rem)", fontWeight: 400, color: "var(--color-text)" }}>
               Три фермента работают<br /><em style={{ fontStyle: "italic", color: "var(--color-primary)" }}>каскадом — один за другим</em>
             </h2>
-            <p className="leading-relaxed mx-auto max-w-[52ch]" style={{ fontSize: "14px", color: "var(--color-text-muted)" }}>
+            <p className="leading-relaxed mx-auto max-w-[52ch]" style={{ fontSize: "24px", color: "var(--color-text-muted)" }}>
               Уникальность формулы SUDOKU — не в отдельных ферментах, а в их синергии. SOD перехватывает радикал, GSH‑Px подхватывает продукт реакции, CAT завершает процесс.
             </p>
           </div>
