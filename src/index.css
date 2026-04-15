@@ -32,22 +32,7 @@
     --sidebar-accent-foreground: 240 5.9% 10%;
     --sidebar-border: 220 13% 91%;
     --sidebar-ring: 217.2 91.2% 59.8%;
-
-    /* SUDOKU Brand Colors */
-    --sudoku-ink: #0f0f0f;
-    --sudoku-graphite: #1a1a1a;
-    --sudoku-slate: #2a2a2a;
-    --sudoku-mist: #f5f2ec;
-    --sudoku-cream: #faf8f4;
-    --sudoku-ivory: #f0ede5;
-    --sudoku-gold: #b8935a;
-    --sudoku-gold-light: #d4aa72;
-    --sudoku-teal: #2a6b5e;
-    --sudoku-teal-light: #3a8a78;
-    --sudoku-dim: #6b6560;
-    --sudoku-line: #e0dbd2;
   }
-
   .dark {
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
@@ -88,172 +73,161 @@
   }
 }
 
-/* SUDOKU Custom Styles */
+/* =============================================
+   SUDOKU DESIGN SYSTEM
+   Forest Green + Warm Ivory + Gold
+   ============================================= */
+
+:root,
+[data-theme="light"] {
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", "Helvetica Neue", sans-serif;
+
+  --color-bg: #f8f6f0;
+  --color-surface: #faf9f5;
+  --color-surface-2: #fcfcf9;
+  --color-surface-offset: #f0ede4;
+  --color-surface-dark: #1a2a1f;
+  --color-divider: #e2ddd4;
+  --color-border-s: #d8d3c8;
+
+  --color-text: #1c2219;
+  --color-text-muted: #6b7468;
+  --color-text-faint: #a8a99f;
+  --color-text-inverse: #f5f3ee;
+
+  --color-primary: #2d5a3d;
+  --color-primary-hover: #1e3f2b;
+  --color-primary-light: #e8f0eb;
+
+  --color-gold: #b8892a;
+  --color-gold-light: #f5e8cc;
+  --color-gold-bright: #d4a843;
+
+  --s-shadow-sm: 0 1px 3px rgba(20, 40, 25, 0.08);
+  --s-shadow-md: 0 4px 16px rgba(20, 40, 25, 0.1);
+  --s-shadow-lg: 0 12px 40px rgba(20, 40, 25, 0.14);
+  --s-shadow-xl: 0 24px 64px rgba(20, 40, 25, 0.18);
+}
+
+[data-theme="dark"] {
+  --color-bg: #121a14;
+  --color-surface: #172019;
+  --color-surface-2: #1c271e;
+  --color-surface-offset: #0f170f;
+  --color-surface-dark: #0a0f0b;
+  --color-divider: #2a3a2d;
+  --color-border-s: #344837;
+  --color-text: #dde8de;
+  --color-text-muted: #8fa88f;
+  --color-text-faint: #566857;
+  --color-text-inverse: #dde8de;
+  --color-primary: #4a8f62;
+  --color-primary-hover: #3a7250;
+  --color-primary-light: #1a2e1e;
+  --color-gold: #d4a843;
+  --color-gold-light: #2a2010;
+  --color-gold-bright: #f0c060;
+  --s-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.25);
+  --s-shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --s-shadow-lg: 0 12px 40px rgba(0, 0, 0, 0.45);
+  --s-shadow-xl: 0 24px 64px rgba(0, 0, 0, 0.55);
+}
+
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.font-ibm {
-  font-family: "IBM Plex Sans", sans-serif;
-}
-.font-cormorant {
-  font-family: "Cormorant", serif;
-}
-.font-mono-ibm {
-  font-family: "IBM Plex Mono", monospace;
+body {
+  font-family: var(--font-body);
+  background: var(--color-bg);
+  color: var(--color-text);
 }
 
-/* Molecule Node Animation */
-@keyframes pulse-node {
-  0%,
-  100% {
-    opacity: 0.6;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.15);
-  }
+/* Reveal animation on scroll */
+.s-reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition:
+    opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
-@keyframes orbit {
-  0% {
-    transform: rotate(0deg) translateX(60px) rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg) translateX(60px) rotate(-360deg);
-  }
+.s-reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
-@keyframes fade-up {
+
+/* Hero entrance */
+@keyframes s-fade-up {
   from {
     opacity: 0;
-    transform: translateY(24px);
+    transform: translateY(20px);
   }
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.s-fade-up {
+  animation: s-fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
-@keyframes count-up {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-@keyframes bar-grow {
-  from {
-    width: 0;
-  }
-  to {
-    width: var(--bar-w);
-  }
-}
-@keyframes draw-line {
-  from {
-    stroke-dashoffset: 1000;
-  }
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-.animate-fade-up {
-  animation: fade-up 0.7s ease both;
-}
-.animate-fade-in {
-  animation: fade-in 0.5s ease both;
-}
-
-.delay-100 {
+.s-delay-1 {
   animation-delay: 0.1s;
 }
-.delay-200 {
+.s-delay-2 {
   animation-delay: 0.2s;
 }
-.delay-300 {
+.s-delay-3 {
   animation-delay: 0.3s;
 }
-.delay-400 {
+.s-delay-4 {
   animation-delay: 0.4s;
 }
-.delay-500 {
+.s-delay-5 {
   animation-delay: 0.5s;
 }
-.delay-600 {
+.s-delay-6 {
   animation-delay: 0.6s;
 }
-.delay-700 {
+.s-delay-7 {
   animation-delay: 0.7s;
 }
-.delay-800 {
-  animation-delay: 0.8s;
+
+/* Typography helpers */
+.font-display {
+  font-family: var(--font-display);
 }
 
-.node-pulse {
-  animation: pulse-node 2.4s ease-in-out infinite;
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-s);
+  border-radius: 3px;
 }
 
-/* Bar chart animation */
-.bar-animated {
-  animation: bar-grow 1.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+::selection {
+  background: rgba(45, 90, 61, 0.18);
+  color: var(--color-text);
+}
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 3px;
 }
 
-/* SVG line draw */
-.svg-draw {
-  stroke-dasharray: 1000;
-  animation: draw-line 2s ease both;
-}
-
-/* Nav blur */
-.nav-blur {
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-}
-
-/* Timeline vertical line */
-.timeline-line::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 1px;
-  background: linear-gradient(
-    to bottom,
-    transparent,
-    var(--sudoku-gold),
-    transparent
-  );
-}
-
-/* Card hover */
-.card-lift {
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-}
-.card-lift:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
-}
-
-/* Grain texture overlay */
-.grain::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
-  pointer-events: none;
-  border-radius: inherit;
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }
