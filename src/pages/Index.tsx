@@ -409,7 +409,7 @@ function Science() {
             style={{ borderColor: "var(--color-primary)", background: "var(--color-primary-light)" }}
           >
             <div className="text-xs font-semibold tracking-[0.14em] uppercase mb-4" style={{ color: "var(--color-gold)" }}>Научная база</div>
-            <h2 className="mb-5 leading-[1.05]" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.6rem,1rem+4vw,5rem)", fontWeight: 400, color: "var(--color-text)" }}>
+            <h2 className="mb-5 leading-[1.05]" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(3.6rem,1rem+6vw,7rem)", fontWeight: 400, color: "var(--color-text)" }}>
               Три фермента работают<br /><em style={{ fontStyle: "italic", color: "var(--color-primary)" }}>каскадом — один за другим</em>
             </h2>
             <p className="leading-relaxed mx-auto max-w-[52ch]" style={{ fontSize: "clamp(1rem,0.9rem+0.4vw,1.2rem)", color: "var(--color-text-muted)" }}>
