@@ -408,8 +408,8 @@ function Science() {
             className="inline-block text-center px-10 py-10 rounded-2xl border-2 mb-0"
             style={{ borderColor: "var(--color-primary)", background: "var(--color-primary-light)" }}
           >
-            <div className="text-xs font-semibold tracking-[0.14em] uppercase mb-4" style={{ color: "var(--color-gold)" }}>Научная база</div>
-            <h2 className="mb-5 leading-[1.05]" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(3.6rem,1rem+6vw,7rem)", fontWeight: 400, color: "var(--color-text)" }}>
+            <div className="font-semibold tracking-[0.14em] uppercase mb-4" style={{ fontSize: "24px", color: "var(--color-gold)" }}>Научная база</div>
+            <h2 className="mb-5 leading-[1.05]" style={{ fontFamily: "var(--font-display)", fontSize: "24px", fontWeight: 400, color: "var(--color-text)" }}>
               Три фермента работают<br /><em style={{ fontStyle: "italic", color: "var(--color-primary)" }}>каскадом — один за другим</em>
             </h2>
             <p className="leading-relaxed mx-auto max-w-[52ch]" style={{ fontSize: "24px", color: "var(--color-text-muted)" }}>
