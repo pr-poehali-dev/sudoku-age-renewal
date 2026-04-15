@@ -404,13 +404,18 @@ function Science() {
       <div className="max-w-[1200px] mx-auto px-6">
         {/* Header */}
         <Reveal className="text-center mb-12">
-          <div className="text-xs font-semibold tracking-[0.12em] uppercase mb-3" style={{ color: "var(--color-gold)" }}>Научная база</div>
-          <h2 className="mb-4 leading-[1.1]" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2rem,1.2rem+2.5vw,3.5rem)", fontWeight: 400, color: "var(--color-text)" }}>
-            Три фермента работают<br /><em style={{ fontStyle: "italic", color: "var(--color-primary)" }}>каскадом — один за другим</em>
-          </h2>
-          <p className="text-base leading-relaxed mx-auto max-w-[54ch]" style={{ color: "var(--color-text-muted)" }}>
-            Уникальность формулы SUDOKU — не в отдельных ферментах, а в их синергии. SOD перехватывает радикал, GSH-Px подхватывает продукт реакции, CAT завершает процесс.
-          </p>
+          <div
+            className="inline-block text-center px-10 py-10 rounded-2xl border-2 mb-0"
+            style={{ borderColor: "var(--color-primary)", background: "var(--color-primary-light)" }}
+          >
+            <div className="text-xs font-semibold tracking-[0.14em] uppercase mb-4" style={{ color: "var(--color-gold)" }}>Научная база</div>
+            <h2 className="mb-5 leading-[1.05]" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.6rem,1rem+4vw,5rem)", fontWeight: 400, color: "var(--color-text)" }}>
+              Три фермента работают<br /><em style={{ fontStyle: "italic", color: "var(--color-primary)" }}>каскадом — один за другим</em>
+            </h2>
+            <p className="leading-relaxed mx-auto max-w-[52ch]" style={{ fontSize: "clamp(1rem,0.9rem+0.4vw,1.2rem)", color: "var(--color-text-muted)" }}>
+              Уникальность формулы SUDOKU — не в отдельных ферментах, а в их синергии. SOD перехватывает радикал, GSH‑Px подхватывает продукт реакции, CAT завершает процесс.
+            </p>
+          </div>
         </Reveal>
 
         {/* Lab image */}
