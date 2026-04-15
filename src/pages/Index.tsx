@@ -560,8 +560,8 @@ function Products() {
     <section id="products" className="py-20 md:py-28" style={{ background: "var(--color-surface-offset)" }}>
       <div className="max-w-[1200px] mx-auto px-6">
         <Reveal className="mb-12">
-          <div className="text-sm font-semibold tracking-[0.12em] uppercase mb-3" style={{ color: "var(--color-gold)", fontSize: "0.875rem" }}>Флагманские продукты</div>
-          <h2 className="mb-4 leading-[1.1]" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(4rem,2.4rem+5vw,7rem)", fontWeight: 400, color: "var(--color-text)" }}>
+          <div className="text-sm font-semibold tracking-[0.12em] uppercase mb-3" style={{ color: "var(--color-gold)", fontSize: "1.75rem" }}>Флагманские продукты</div>
+          <h2 className="mb-4 leading-[1.1]" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(4.875rem,3.275rem+5vw,7.875rem)", fontWeight: 400, color: "var(--color-text)" }}>
             Три продукта — <em style={{ fontStyle: "italic", color: "var(--color-primary)" }}>одна система</em><br />здоровья и молодости
           </h2>
           <p className="leading-relaxed max-w-[54ch]" style={{ color: "var(--color-text-muted)", fontSize: "2rem" }}>
