@@ -333,7 +333,7 @@ function History() {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           {/* Left */}
           <Reveal>
-            <div className="text-xs font-semibold tracking-[0.12em] uppercase mb-3" style={{ color: "var(--color-gold)" }}>История корпорации</div>
+            <div className="font-semibold tracking-[0.12em] uppercase mb-3" style={{ color: "var(--color-gold)", fontSize: "1.5rem" }}>История корпорации</div>
             <h2 className="mb-4 leading-[1.1]" style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2rem,1.2rem+2.5vw,3.5rem)", fontWeight: 400, color: "var(--color-text)" }}>
               Почти 60 лет науки<br />в одной <em style={{ fontStyle: "italic", color: "var(--color-primary)" }}>капсуле</em>
             </h2>
