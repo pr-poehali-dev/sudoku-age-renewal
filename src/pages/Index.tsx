@@ -219,7 +219,7 @@ function Hero() {
               color: "var(--color-text)",
             }}
           >
-            Три фермента,<br />которые дарят<br />
+            Три друга-фермента,<br />которые дарят<br />
             <em style={{ fontStyle: "italic", color: "var(--color-primary)" }}>настоящую молодость</em>
           </h1>
 
